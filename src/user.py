@@ -11,7 +11,14 @@ class User:
         self.borrowed_cars = [] # Lista para rastrear los carros alquilados por el usuario
 
     def borrow_car(self,car):
-
+        """
+        Permite al usuario alquilar un carro si está disponible.
+        
+        :param car: Instancia de la clase RentalCar
+        """
         if car.available:
             car.borrow()
             self.borrowed_cars.append(car)
+            print(f"{self.name} ha alquilado el carro {car.car}")
+        else:
+            print(f"{self.name} no puede alquilar el carro {car.car}, no está disponible")
