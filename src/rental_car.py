@@ -13,6 +13,9 @@ class RentalCar:
         self.available = True # Indica si el carro está disponible para alquilar
     
     def borrow(self):
+        """
+        Marca el carro como alquilado si está disponible.
+        """
         if self.available:
             self.available = False
             print(f"El carro {self.car} ha sido alquilado.")
