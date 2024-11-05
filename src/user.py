@@ -9,3 +9,9 @@ class User:
         self.name = name
         self.user_id = user_id
         self.borrowed_cars = [] # Lista para rastrear los carros alquilados por el usuario
+
+    def borrow_car(self,car):
+
+        if car.available:
+            car.borrow()
+            self.borrowed_cars.append(car)
