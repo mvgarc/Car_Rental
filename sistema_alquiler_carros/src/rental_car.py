@@ -8,4 +8,4 @@ class User:
         """
         self.name = name
         self.user_id = user_id
-        self.borrowed_cars = []
+        self.borrowed_cars = [] # Lista para rastrear los carros alquilados por el usuario
