@@ -22,3 +22,16 @@ class User:
             print(f"{self.name} ha alquilado el carro {car.car}")
         else:
             print(f"{self.name} no puede alquilar el carro {car.car}, no está disponible")
+    
+    def return_car(self, car):
+        """
+        Permite al usuario devolver un carro previamente alquilado.
+        
+        :param car: Instancia de la clase RentalCar
+        """
+        if car in self.borrowed_cars:
+            car.return_car()
+            self.borrowed_cars.remove(car)
+            print(f"{self.name} ha devuelto el carro {car.car}")
+        else:
+            print(f"{self.name} no tiene el carro {car.car} para devolver")
