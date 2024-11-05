@@ -15,4 +15,6 @@ class RentalCar:
     def borrow(self):
         if self.available:
             self.available = False
-            
+            print(f"El carro {self.car} ha sido alquilado.")
+        else:
+            print(f"El carro {self.car} no está disponible para alquilar.")
