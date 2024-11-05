@@ -21,3 +21,7 @@ class RentalCar:
             print(f"El carro {self.car} ha sido alquilado.")
         else:
             print(f"El carro {self.car} no está disponible para alquilar.")
+    
+    def return_car(self):
+        if not self.available:
+            self.available = True
