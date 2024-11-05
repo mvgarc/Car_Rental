@@ -11,3 +11,8 @@ class RentalCar:
         self.price = price
         self.brand = brand
         self.available = True # Indica si el carro está disponible para alquilar
+    
+    def borrow(self):
+        if self.available:
+            self.available = False
+            
