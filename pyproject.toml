@@ -2,7 +2,7 @@
 name = "my-car-rental-app"
 version = "0.1.0"
 description = "Sistema de gestión de alquiler de carros."
-authors = ["María García <mariav2601@gmail.com>"]
+authors = ["María García <user@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
